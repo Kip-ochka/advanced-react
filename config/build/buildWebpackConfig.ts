@@ -1,4 +1,3 @@
-import path from 'path'
 import webpack from 'webpack'
 import { buildDevServer } from './buildDevServer'
 import { buildLoaders } from './buildLoaders'
@@ -20,9 +19,9 @@ export function buildWebpackConfig(
     },
     plugins: buildPlugins(options),
     module: {
-      rules: buildLoaders(),
+      rules: buildLoaders(options),
     },
-    resolve: buildResolvers(),
+    resolve: buildResolvers(options),
     devtool: isDev ? 'inline-source-map' : undefined,
     devServer: isDev ? buildDevServer(options) : undefined,
   }

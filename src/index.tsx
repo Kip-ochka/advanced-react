@@ -1,9 +1,14 @@
 import { render } from 'react-dom'
-import { Counter } from './components/Counter/Counter'
+import { BrowserRouter } from 'react-router-dom'
+import 'app/styles/index.scss'
+import { ThemeProvider } from 'app/providers/ThemeProvider'
+import App from 'app/App'
 
 render(
-  <div>
-    <Counter />
-  </div>,
+  <BrowserRouter>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </BrowserRouter>,
   document.getElementById('root')
 )
