@@ -3,5 +3,7 @@
   "Главная": "Main",
   "О сайте": "About us",
   "Странница не найдена": "Page not found",
-  "Переключить сайдбар": "Toggle sidebar"
+  "Переключить сайдбар": "Toggle sidebar",
+  "Произошла непредвиденная ошибка": "Unexpected error",
+  "Обновить страницу": "Refresh page"
 }
